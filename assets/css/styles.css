@@ -57,6 +57,9 @@ footer{
 	height:65px;
 	margin-left: 15%;
 }
+.header__logo a{
+	text-decoration: none;
+}
 
 .menu__burguer img{
 	width: 70%;
