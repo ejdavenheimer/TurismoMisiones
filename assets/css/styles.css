@@ -24,7 +24,7 @@ body{
 }
 
 /* ESTRUCTURA DEL INDEX - GRID */
-.container{
+.containerP{
 	display: grid;
 	grid-template-rows: 80px 1fr 100px;
 	grid-template-columns: 1fr;
@@ -136,4 +136,10 @@ footer{
 }
 .redes__icono{
 	width: 120%;
+}
+
+
+/* BOOTSTRAP MENU */
+div#offcanvasNavbar {
+    width: 200px;
 }
