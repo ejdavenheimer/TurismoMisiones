@@ -143,3 +143,9 @@ footer{
 div#offcanvasNavbar {
     width: 200px;
 }
+
+.nav-item{
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px #DDD solid;
+}
