@@ -3,100 +3,134 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <!-- Para que se adapte a los tipos de pantalla -->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
     <!-- Vinculación con hoja de CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <!-- Nombre que figura en la pestaña del navegador -->
     <title>Turismo Misiones</title>
     <!-- Icono que figura en la pestaña del navegador -->
     <link rel="icon" href="../img/Logo.ico">
-    <!-- Tipo de letda -->
+    <!-- Tipo de letra -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
   </head>
 
-  <body>
-    <div class="grid__container">
+  <body id="cultura">
+    <div class="containerP">   
+      <header>
+        <div class="header__logo">
+          <img src="../img/Logo.png">
+        </div>
 
-      <!-- ENCABEZADO (título, logo) -->
-      <header class="header">
-        <div class="header__box">
-            <!-- Título y logo -->
-            <div class="header__title">
-              <img class="header__title__img" src="../img/logo.png" alt="logo de la página">
-              <h1 class="header__title__format">Turismo Misiones</h1>
+          <!-- <nav class="header__menu">
+            <div class="menu__burguer">
+              <img src="img/open-menu2.png">
             </div>
-
-          <!-- Menú -->
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list__option"><a href="../index.html">INICIO</a></li>
-              <li class="menu__list__option"><a href="cultura.html">CULTURA</a></li>
-              <li class="menu__list__option"><a href="animales.html">ANIMALES</a></li>
-              <li class="menu__list__option"><a href="lugares.html">LUGARES</a></li>
-              <li class="menu__list__option"><a href="contacto.html">CONTACTO</a></li>
+            <ul class="menu__option">
+              <li class="option__link"><a href="#">Inicio</a></li>
+              <li class="option__link"><a href="#">Cultura</a></li>
+              <li class="option__link"><a href="#">Animales</a></li>
+              <li class="option__link"><a href="#">Lugares</a></li>
+              <li class="option__link"><a href="#">Contacto</a></li>
             </ul>
-          </nav>
-        </div> 
+          </nav> -->
+
+        <nav class="navbar navbar-light">
+          <div class="container-fluid">
+
+            <!-- Botón para abrir menú-->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <!-- Icono del menú-->
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Botón para cerrar menú-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <!-- Header el menú abierto -->
+              <div class="offcanvas-header ">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                <button type="button" class="btn-close text-resets" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+              </div>
+              <!-- Menú que aparece al abrir -->
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cultura.html">Cultura</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="animales.html">Animales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="lugares.html">Lugares</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </nav>
       </header>
 
-      <!-- Tabla solicitada en el ejercicio -->
-    <section class="main__culture">
-      <div class="main__culture__title">
-          <h2>CULTURA</h2>
-      </div>
 
-      <div class="main__culture__box">
-        <div class="main__culture__box__bloque">
-          <img src="../img/bandera.jpeg">
-          <p>La Bandera de Misiones se implementó el día 12 de febrero de 1992 y sus colores significan, según José Artigas:
-            <ul>
-              <li>Rojo: "por la sangre derramada para sostener nuestra libertad e independencia".</li>
-              <li>Azul: "de nuestra decisión por la República".</li>
-              <li>Blanco: "de nuestra distinción y grandeza".</li>
-            </ul>
-          </p>
+      <main class="cultura" id="cultura">
+        <div class="cultura__title">
+          <h2>CULTURA</h2>
         </div>
-        <div class="main__culture__box__bloque">
-          <p>La Bandera de Misiones se implementó el día 12 de febrero de 1992 y sus colores significan, según José Artigas:
-            <ul>
-              <li>Rojo: "por la sangre derramada para sostener nuestra libertad e independencia".</li>
-              <li>Azul: "de nuestra decisión por la República".</li>
-              <li>Blanco: "de nuestra distinción y grandeza".</li>
-            </ul>
-          </p>
-          <img src="../img/bandera.jpeg">
+
+        <div class="cultura__articles">
+          <div class="articles__format">
+            <h5>Historia</h5>
+            <p>La provincia de Misiones lleva un nombre que recuerda a los pueblos jesuíticos, pero su historia se funda en las raíces de la América indígena. Los indios guaraníes, de la familia Tupí-Guaraní, provenientes del Amazonas, llegaron a lo que es hoy territorio misionero hacia el año 1000.</p>
+          </div>
+
+          <div class="articles__format articles__flag">
+            <h5>Bandera</h5>
+            <img src="../img/bandera.jpeg">
+          </div>
+
+          <div class="articles__format article__himno">
+            <h5>Himno</h5>
+            <div class="himno__video">
+              <iframe src="https://www.youtube.com/embed/mWwZ-V2sfS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
-        <div class="main__culture__box__bloque">
-          <img src="../img/bandera.jpeg">
-          <p>La Bandera de Misiones se implementó el día 12 de febrero de 1992 y sus colores significan, según José Artigas:
-            <ul>
-              <li>Rojo: "por la sangre derramada para sostener nuestra libertad e independencia".</li>
-              <li>Azul: "de nuestra decisión por la República".</li>
-              <li>Blanco: "de nuestra distinción y grandeza".</li>
-            </ul>
-          </p>
-        </div>        
-      </div>
-      
-    </section>
+
+   
+
+      </main>
 
       <footer>
-        <div class="footer__box">
-          <p class="footer__box__text">© Turismo Misiones. 2021 </p>
-          <div class="footer__box__redes"> 
-            <a href="https://www.facebook.com/">
-              <img class="footer__box__redes__icon" src="https://img.icons8.com/material-rounded/24/ffffff/facebook.png"/>
+        <div class="footer">
+          <div class="footer__redes">
+            <a href="https://www.facebook.com/SuenosdeEmociones" target="_blank">
+              <img class="redes__icono" src="https://img.icons8.com/material-rounded/24/ffffff/facebook.png"/>
             </a>
-            <a href="https://www.twitter.com">
-              <img class="footer__box__redes__icon" src="https://img.icons8.com/ios-glyphs/24/ffffff/twitter--v1.png"/>
+            <a href="https://twitter.com/bizarrap" target="_blank">
+              <img class="redes__icono" src="https://img.icons8.com/ios-glyphs/24/ffffff/twitter--v1.png"/>
             </a>
-            <a href="https://www.instagram.com">
-              <img class="footer__box__redes__icon" src="https://img.icons8.com/ios-glyphs/24/ffffff/instagram-new.png"/>
+            <a href="https://www.instagram.com/khamai.gg/" target="_blank">
+              <img class="redes__icono" src="https://img.icons8.com/ios-glyphs/24/ffffff/instagram-new.png"/>
             </a>
            </div>
+           <p class="footer__txt">© Turismo Misiones. 2021</p>
         </div>
       </footer>
     </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>
