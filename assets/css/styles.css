@@ -1,0 +1,139 @@
+/* Colores */
+:root{
+	--fondo: #111;
+	--cuerpo: #222;
+	--margen: #333;
+	--amarillo: FFB417;
+	--verde: #3ED13E66; 
+	--verdeClaro: #1AA51A;
+	--efecto: #00000099;
+}
+/*---------------------------- 
+------- GENERAL STYLE --------
+------------------------------*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: grey;
+	font-family: 'Hammersmith One', 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+
+/* ESTRUCTURA DEL INDEX - GRID */
+.container{
+	display: grid;
+	grid-template-rows: 80px 1fr 100px;
+	grid-template-columns: 1fr;
+	min-height: 100vh;
+
+}
+
+header{
+	grid-row: 1/2;
+	grid-column: 1/2;
+	background: var(--fondo);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main{
+	grid-row: 2/3;
+	grid-column: 1/2;
+	background: grey;
+}
+footer{
+	grid-row: 3/4;
+	grid-column: 1/2;
+	background: var(--fondo);
+}
+
+/* HEADER - acomodando */
+.header__logo img{
+	height:65px;
+	margin-left: 15%;
+}
+
+.menu__burguer img{
+	width: 70%;
+}
+.menu__option{
+	list-style: none;
+}
+.option__link{
+	display: inline-block;
+}
+
+/* MAIN */
+.inicio{
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 2px;
+}
+
+.inicio__cultura{
+	grid-row: 1/2;
+	grid-column: 1/2;
+	background-image: url("../../img/Cultura.jpg");
+	background-size: cover;
+}
+.inicio__animales{
+	grid-row: 2/3;
+	grid-column: 1/2;
+	background-image: url("../../img/Animales.jpg");
+	background-size: cover;
+}
+.inicio__lugares{
+	grid-row: 3/4;
+	grid-column: 1/2;
+	background-image: url("../../img/Lugares.jpg");
+	background-size: cover;
+}
+
+.inicio__item{
+	text-decoration: none;
+	height: 100%;
+}
+.item__box{
+	background-color: var(--efecto);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.item__box h2{
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+/* FOOTER */
+.footer__redes{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #11110A;
+	height: 60px;
+}
+.footer__txt{
+	color: #FFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+}
+.footer__redes a{
+	text-decoration: none;
+	margin: 0 8px;
+}
+.redes__icono{
+	width: 120%;
+}
